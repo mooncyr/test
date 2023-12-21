@@ -6,7 +6,7 @@
     </head>
     <body>
 
-        <canvas id="candvas" width="300" height="300"></canvas>
+        <canvas id="canvas" width="300" height="300"></canvas>
         <script type="importmap">{
             "imports": {
               "three": "https://unpkg.com/three@0.141.0/build...",
@@ -34,7 +34,7 @@
 
 
             let loader = new GLFLoader();
-            loader.load('./ccp/shiba/scene.gltf', function(gltf){
+            loader.load('./shiba/scene.gltf', function(gltf){
                 scene.add(gltf.scene);
                 
 
